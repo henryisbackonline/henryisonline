@@ -9,9 +9,9 @@ export const config = {
 	htmlTemplateEngine: 'njk',
 
     dir: {
-        input: "source",
-        includes: "../_includes",
-        data: "../_data",
+        input: "_source",
+        includes: "/_includes",
+        data: "/_data",
         output: "_site"
     },
 };
