@@ -1,4 +1,8 @@
 export default function (eleventyConfig) {
-	eleventyConfig.setInputDirectory('input');
-	eleventyConfig.setOutputDirectory('_site');
+	eleventyConfig.setInputDirerctory('source')
 }
+
+export const config = {
+	markdownTemplateEngine: 'njk',
+	htmlTemplateEngine: 'njk',
+};
