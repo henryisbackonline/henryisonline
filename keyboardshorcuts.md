@@ -1,4 +1,5 @@
 ---
+layout: home
 title: Keyboard Shortcuts - Praise Be
 tags:
 - productivity
