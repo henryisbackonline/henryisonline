@@ -1,5 +1,5 @@
 export default function (eleventyConfig) {
-	eleventyConfig.setInputDirerctory('source')
+	eleventyConfig.setInputDirectory('source')
 }
 
 export const config = {
