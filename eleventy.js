@@ -1,7 +1,7 @@
 export default function (eleventyConfig) {
-    eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
-    eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
-    eleventyConfig.addLayoutAlias("home", "layouts/home.njk");
+    eleventyConfig.addLayoutAlias("post", "_includes/layouts/post.njk");
+    eleventyConfig.addLayoutAlias("base", "_includes/layouts/base.njk");
+    eleventyConfig.addLayoutAlias("home", "_includes/layouts/home.njk");
 }
 
 export const config = {
