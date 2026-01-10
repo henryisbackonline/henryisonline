@@ -1,7 +1,5 @@
 export default function (eleventyConfig) {
-    eleventyConfig.addLayoutAlias("post", "_includes/layouts/post.njk");
-    eleventyConfig.addLayoutAlias("base", "_includes/layouts/base.njk");
-    eleventyConfig.addLayoutAlias("home", "_includes/layouts/home.njk");
+    // eleventy configuration
 }
 
 export const config = {
@@ -10,8 +8,8 @@ export const config = {
 
     dir: {
         input: "_source",
-        includes: "/_includes",
-        data: "/_data",
+        includes: "../_includes",
+        data: "../_data",
         output: "_site"
     },
 };

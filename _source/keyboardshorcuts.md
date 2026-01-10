@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: layouts/home.njk
 title: Keyboard Shortcuts - Praise Be
 tags:
 - productivity
