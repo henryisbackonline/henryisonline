@@ -5,17 +5,8 @@ export default function (eleventyConfig) {
 }
 
 export const config = {
-
-    templateFormats: [
-        "md",
-        "njk",
-        "html",
-        "liquid",
-        "11ty.js",
-    ],
-
-    markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk",
+	markdownTemplateEngine: 'njk',
+	htmlTemplateEngine: 'njk',
 
     dir: {
         input: "source",
