@@ -1,0 +1,20 @@
+{
+    "Insert image HTML": {
+        "prefix": "/htimg",
+        "body": [
+            "<p><img src=\"$1\" alt=\"$2\"></p>"
+        ],
+        "description": "Insert an HTML <img> tag with an attachemnts path"
+    },
+    
+    "Insert figure HTML": {
+        "prefix": "/htfig",
+        "body": [
+            "<figure>",
+            "    <img src=\"$1\" alt=\"$2\">",
+            "    <figcaption>$3</figcaption>",
+            "</figure>"
+        ],
+        "description": "Insert a <figue> tag with image source and description"
+    }
+}
