@@ -3,6 +3,6 @@ export const config = {
 	htmlTemplateEngine: "njk",
 
 	dir: {
-		input: "src",
+		input: "_src",
 	}
 };
