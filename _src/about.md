@@ -3,9 +3,8 @@ title: About Me
 layout: "layouts/home.njk"
 eleventyNavigation:
   key: About
-  order: 3
+  order: 4
 ---
+# {{ title }}
 
-<h1>{{ title }}</h1>
-
-<p>This is everything about me.</p>
+This is everything about me.

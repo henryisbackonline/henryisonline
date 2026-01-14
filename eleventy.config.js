@@ -2,7 +2,7 @@ import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 
 export default function (eleventyConfig) {
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
-    eleventyConfig.addPassthroughCopy("simple.css");
+    eleventyConfig.addPassthroughCopy("assets/simple.css");
 };
 export const config = {
     markdownTemplateEngine: "njk",

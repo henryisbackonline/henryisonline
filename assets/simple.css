@@ -26,12 +26,13 @@ p {
     font-family: serif;
     color: var(--color-text);
     line-height: 1.6;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 code {
     font-family: monospace;
     color: var(--color-text);
+    font-size: 14px;
 }
 
 body {
