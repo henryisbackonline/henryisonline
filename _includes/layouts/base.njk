@@ -4,8 +4,26 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ title }}</title>
+    <link rel="stylesheet" href="/simple.css">
 </head>
-<body>
-	{% block content %}{% endblock %}
-</body>
+	<body>
+		<header>
+			<h1 class="site-title">henry is online</h1>
+            <div class="line-break"></div>
+			<nav class="nav-list">
+				<h4>{{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}</h4>
+			</nav>
+            <div class="line-break"></div>
+		</header>
+
+		<main id="main">
+		{{ content | safe }}
+		</main>
+
+		<footer>
+			<p>
+				<em>Built with <a href="https://www.11ty.dev/">Eleventy</a></em>
+			</p>
+		</footer>
+	</body>
 </html>

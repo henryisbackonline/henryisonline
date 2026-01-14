@@ -1,5 +1,21 @@
 ---
-title: different title now
-layout: 'layouts/home.njk'
+layout: "layouts/base.njk"
+title: Henry is Online
+eleventyNavigation:
+  key: Home
+  order: 1
 ---
 
+<h1>This is my website.</h1>
+<p>I'm Henry, and this is my website. I made this because I wanted a place on the internet that wasn't just an Instagram page or Mastodon account</p>
+<p>If you want to read more about me, you can do so <a href="/about/">here</a>.</p>
+<p>If you want to know more about this website and how I made it, check out <a href="/colophon/">the colophon</a>.</p>
+<h1>Recent Posts</h1>
+
+{#
+{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
+{% set postslistCounter = postsCount %}
+{% include "postslist.njk" %}
+#}
+
+<p>More posts can be found in the <a href="/blog/">archive</a>.</p>
