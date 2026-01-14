@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "pnpm exec eleventy --serve --quiet",
+    "serve": "pnpm exec eleventy --serve --quiet",
+    "build": "pnpm exec eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
