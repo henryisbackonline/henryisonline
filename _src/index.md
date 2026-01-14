@@ -1,5 +1,5 @@
 ---
-title: 'different title now'
+title: different title now
 layout: 'layouts/home.njk'
 ---
 
