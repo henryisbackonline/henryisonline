@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{ title }}</title>
-    <link rel="stylesheet" href="/simple.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="_assets/simple.css">
 </head>
-	<body>
-		<header>
-			<h1 class="site-title">henry is online</h1>
-            <div class="line-break"></div>
-			<nav class="nav-list">
-				<h4>{{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}</h4>
-			</nav>
-            <div class="line-break"></div>
-		</header>
+    <body>
+        <header>
+            <div class="header-text">
+                <h1>henry is online</h1>
+            </div>
+            <div class="nav-divider"></div>
+            <nav class="nav-list">
+                <h4>{{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}</h4>
+            </nav>
+            <div class="nav-divider"></div>
+        </header>
 
-		<main id="main">
-		{{ content | safe }}
-		</main>
+        <main id="main">
+        {{ content | safe }}
+        </main>
 
-		<footer>
-			<p>
-				<em>Built with <a href="https://www.11ty.dev/">Eleventy</a></em>
-			</p>
-		</footer>
-	</body>
+        <footer>
+            <p>
+                <em>Built with <a href="https://www.11ty.dev/">Eleventy</a></em>
+            </p>
+        </footer>
+    </body>
 </html>

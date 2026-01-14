@@ -7,17 +7,13 @@
     --font-code: monospace;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: var(--font-heading);
     color: var(--text-color);
     line-height: 1.2;
 }
 
-h4,
-h5,
-h6 {
+h4, h5, h6 {
     font-family: var(--font-heading);
     color: var(--text-color);
 }
@@ -44,14 +40,21 @@ body {
     color: var(--color-text);
 }
 
-.site-title {
+/* .site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+} */
+
+.header-text h1 {
     font-size: 80px;
     line-height: 1;
     margin: 0;
     padding: 0;
 }
 
-.line-break {
+.nav-divider {
   height: 0;
   border-top: 2px solid var(--text-color);
   margin: 1em 0;
