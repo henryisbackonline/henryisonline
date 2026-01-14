@@ -9,6 +9,7 @@
     "build": "pnpm exec eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "type": "module",
   "keywords": [],
   "author": "Henry",
   "license": "ISC",

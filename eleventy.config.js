@@ -4,5 +4,7 @@ export const config = {
 
 	dir: {
 		input: "_src",
+		includes: "../_includes",
+		data: "../data"
 	}
 };
