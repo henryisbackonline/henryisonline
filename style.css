@@ -2,50 +2,52 @@
     --bg-color: #eeeeee;
     --text-color: #1a1a1a;
 
+    --content-width: 650px;
+
     --font-body: Georgia, 'Times New Roman', 'New York', ui-serif, serif;
     --font-heading: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', Geneva, Tahoma, sans-serif;
-    --font-code: monospace;
+    --font-code: Menlo, Monaco, SF Mono, Consolas, Courier New, Segoe UI Mono, ui-monospace, monospace;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     color: var(--text-color);
     line-height: 1.2;
 }
 
-h4, h5, h6 {
-    font-family: var(--font-heading);
-    color: var(--text-color);
-}
-
 p {
-    font-family: serif;
+    font-family: var(--font-body);
     color: var(--color-text);
     line-height: 1.6;
     font-size: 18px;
 }
 
 code {
-    font-family: monospace;
+    font-family: var(--font-code);
     color: var(--color-text);
     font-size: 14px;
+    max-width: var(--content-width);
+}
+
+pre {
+    overflow: auto;
 }
 
 body {
     color: var(--bg-color);
     margin: 40px auto;
-    max-width: 650px;
+    max-width: var(--content-width);
     padding: 0 10px;
     background-color: var(--color-bg);
     color: var(--color-text);
 }
 
-/* .site-header {
+.site-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-} */
+}
 
 .header-text h1 {
     font-size: 80px;
@@ -53,6 +55,13 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* .logo {
+  max-height: 100%;
+  height: 4.5em;
+  width: auto;
+  flex-shrink: 0;
+} */
 
 .nav-divider {
   height: 0;
