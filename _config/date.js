@@ -12,4 +12,13 @@ export default function(eleventyConfig) {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
 		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat('yyyy-LL-dd');
 	});
+
+    eleventyConfig.addFilter("yearString", (dateObj) => {
+		// This is identical to the above function
+        // The only difference is the removal of the month and year portions of the date format
+        //
+        // I use this to get the year a post was created and create a matching folder in the 
+        // output directory, whoch then contains the slug of the post title.
+		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat('yyyy');
+	});
 };

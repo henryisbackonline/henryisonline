@@ -1,5 +1,5 @@
 {
     "layout": "layouts/post.njk",
     "tags": "post",
-    "permalink": "{{page.filePathStem }}{{ title | slugify }}/"
+    "permalink": "/blog/{{ page.date | yearString }}/{{ title | slugify }}/index.html"
 }
