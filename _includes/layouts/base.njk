@@ -4,32 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <style>
-        {% include "style.css" %}
-        {% getBundle "css" %}
-    </style>
+    <link rel="stylesheet" href="/style.css">
 </head>
     <body>
-        <header>
+        <header id="top">
             <div class="site-header">
                 <div class="header-text">
                     <h1>henry is online</h1>
                 </div>
                 {# <img class="logo" src="" alt="site logo"> #}
             </div>
-            <div class="nav-divider"></div>
-            <nav class="nav-list">
-                <h4>{{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}</h4>
-            </nav>
-            <div class="nav-divider"></div>
+            {% include "layouts/site-nav.njk" %}
         </header>
         <main id="main">
             {{ content | safe }}
         </main>
         <footer>
-            <p>
-                <em>Built with <a href="https://www.11ty.dev/">Eleventy</a></em>
-            </p>
+            <div class="nav-divider"></div>
+            <h5 style="text-align: center;"><a href="#top">Back to the top &uarr;</a></h5>
         </footer>
     </body>
 </html>
