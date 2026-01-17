@@ -1,4 +1,5 @@
 {
     "layout": "layouts/post.njk",
-    "tag": "post"
+    "tags": "post",
+    "permalink": "{{page.filePathStem }}{{ title | slugify }}/"
 }
