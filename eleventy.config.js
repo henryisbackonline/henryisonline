@@ -5,6 +5,9 @@ import dateFilters from "./_config/date.js";
 
 export default function (eleventyConfig) {
 
+        // Add the cutom date filters - from eleventy-base-blog
+    eleventyConfig.addPlugin(dateFilters);
+
     // Copy everything in the assets folder to the root of the output directory
     eleventyConfig.addPassthroughCopy({ "assets/**" : "./" });
 
@@ -35,8 +38,7 @@ export default function (eleventyConfig) {
     //     // all of the above is from eleventy-base-blog config file
     // });
 
-    // Add the cutom date filters - from eleventy-base-blog
-    eleventyConfig.addPlugin(dateFilters);
+
 
 };
 
