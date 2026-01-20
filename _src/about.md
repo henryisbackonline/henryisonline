@@ -1,6 +1,5 @@
 ---
 title: About Me
-layout: "layouts/home.njk"
 eleventyNavigation:
   key: About
   order: 4

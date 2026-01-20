@@ -1,5 +1,4 @@
 ---
-layout: "layouts/home.njk"
 title: About This Site
 eleventyNavigation:
   key: Colophon

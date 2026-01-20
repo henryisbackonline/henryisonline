@@ -1,5 +1,4 @@
 ---
-layout: "layouts/home.njk"
 title: Feeds
 eleventyNavigation:
   key: Feeds

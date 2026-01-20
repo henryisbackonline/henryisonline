@@ -1,5 +1,4 @@
 ---
-layout: layouts/home.njk
 title: "/now"
 eleventyNavigation:
   key: Now
