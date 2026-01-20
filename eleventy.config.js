@@ -5,16 +5,13 @@ import dateFilters from "./_config/date.js";
 
 export default function (eleventyConfig) {
 
-    eleventyConfig
-        .addPassthroughCopy("site-logo-800px.png")    // Copy the site logo
-        .addPassthroughCopy("style.css");             // Copy the global stylesheet
+    // Copy everything in the assets folder to the root of the output directory
+    eleventyConfig.addPassthroughCopy({ "assets/**" : "./" });
 
     // Use the eleventy navigation options
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-        // process images from .md extensons
-        // extensions: ".md",
 
         // transform all images to png format
         formats: "png",
@@ -44,6 +41,8 @@ export default function (eleventyConfig) {
 };
 
 export const config = {
+
+    // Process all markdown and html files with nunjucks
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
 
