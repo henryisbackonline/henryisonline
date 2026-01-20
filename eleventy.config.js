@@ -32,11 +32,11 @@ export default function (eleventyConfig) {
         }
     });
 
-    eleventyConfig.addBundle("css", {
-        toFileDirectory: "_site",
-        bundleHtmlContentFromSelector: "style"
-        // all of the above is from eleventy-base-blog config file
-    });
+    // eleventyConfig.addBundle("css", {
+    //     toFileDirectory: "_site",
+    //     bundleHtmlContentFromSelector: "style"
+    //     // all of the above is from eleventy-base-blog config file
+    // });
 
     // Add the cutom date filters - from eleventy-base-blog
     eleventyConfig.addPlugin(dateFilters);
