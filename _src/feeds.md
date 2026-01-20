@@ -1,11 +1,11 @@
 ---
 layout: "layouts/home.njk"
-title: Feed
+title: Feeds
 eleventyNavigation:
-  key: Feed
+  key: Feeds
   order: 6
 ---
-# Feed
+# {{ title }}
 
 This is a placeholder page until I have time to properly implement a web feed.
 
