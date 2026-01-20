@@ -8,7 +8,7 @@ eleventyNavigation:
 # This is my website.
 I'm Henry, and this is my website. I made this because I wanted a place on the internet that wasn't just an Instagram page or Mastodon account.
 
-If you want to read more about me, you can do so [here](/about).
+If you want to read more about me, you can do so [here](/about/).
 
 If you want to know more about this website and how I made it, check out [the colophon](/colophon/).
 
@@ -23,4 +23,4 @@ I have some nunjucks here that I need to get working. I haven't yet figured out 
 ```
 {% endraw %}
 
-More posts can be found in the [blog](/blog/)
+More posts can be found in the [blog](/blog/).
