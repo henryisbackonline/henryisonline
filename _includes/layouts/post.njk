@@ -3,9 +3,9 @@ layout: layouts/base.njk
 ---
 <h1>{{ title }}</h1>
 <ul class="post-metadata">
-    <li><em>
-            <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
-    </em></li>
+    <li>
+        <h4><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></h4>
+    </li>
 {#
 At some pooint, I want to do a few things here:
 1. display my posts as a list of posts orgainsed by year. I h 
