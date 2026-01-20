@@ -6,4 +6,4 @@ eleventyNavigation:
 ---
 # {{ title }}
 
-This site was built with [Eleventy](https://11ty.dev)
+This site was built with [Eleventy](https://11ty.dev).

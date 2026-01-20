@@ -7,4 +7,4 @@ eleventyNavigation:
 
 # {{ title }}
 
-This is my now page. It has eveyrhting that I'm now doing in it.
+This is my now page. It has everything that I'm now doing in it.
