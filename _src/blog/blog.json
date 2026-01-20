@@ -1,5 +1,5 @@
 {
     "layout": "layouts/post.njk",
     "tags": "post",
-    "permalink": "/blog/{{ page.date | yearString }}/{{ title | slugify }}/index.html"
+    "permalink": "/blog/{{ title | slugify }}/"
 }
