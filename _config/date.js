@@ -10,15 +10,21 @@ export default function(eleventyConfig) {
 
     eleventyConfig.addFilter("htmlDateString", (dateObj) => {
         // dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-        return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat('yyyy-LL-dd');
+        return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
     });
 
-    eleventyConfig.addFilter("yearString", (dateObj) => {
+    eleventyConfig.addFilter("justYear", (dateObj) => {
         // This is identical to the above function
         // The only difference is the removal of the month and year portions of the date format
         //
         // I use this to get the year a post was created and create a matching folder in the 
         // output directory, which then contains the slug of the post title.
-        return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat('yyyy');
+        return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy");
+    });
+
+    eleventyConfig.addFilter("shortMonthDay", (dateObj) => {
+        // This creates a date string with a short (3-letter) month and a day.
+        // e.g.: Feb 21
+        return DateTime.fromJSDate(dateObj, {zone: "utc"}).toFormat("LLL dd");
     });
 };
