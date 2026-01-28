@@ -10,7 +10,7 @@ eleventyNavigation:
 <ul class="postlist">
 {% for post in collections.post | reverse %}
   <li>
-    <p><a href="{{ post.url }}"><code>{{ post.date | htmlDateString}} | </code>{{ post.data.title }}</a></p>
+    <p><a href="{{ post.url }}"><code>{{ post.date | htmlDateString}} — </code>{{ post.data.title }}</a></p>
   </li>
 {% endfor %}
 </ul>
