@@ -13,7 +13,7 @@ export default function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
     });
 
-    eleventyConfig.addFilter("justYear", (dateObj) => {
+    eleventyConfig.addFilter("yearOnly", (dateObj) => {
         // This is identical to the above function
         // The only difference is the removal of the month and year portions of the date format
         //
