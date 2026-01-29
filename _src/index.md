@@ -5,7 +5,7 @@ eleventyNavigation:
   order: 1
 ---
 # This is my website.
-I'm Henry, and this is my website. I made this because I wanted a place on the internet that wasn't just an Instagram page or Mastodon account.
+I'm Henry, and this is my website. I made this because I wanted a place on the internet that wasn't attached to any kind of social media service. 
 
 If you want to read more about me, you can do so [here](/about/).
 
