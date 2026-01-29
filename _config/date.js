@@ -13,7 +13,7 @@ export default function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
     });
 
-    eleventyConfig.addFilter("yearOnly", (dateObj) => {
+    eleventyConfig.addFilter("yearString", (dateObj) => {
         // This is identical to the above function
         // The only difference is the removal of the month and year portions of the date format
         //
@@ -22,9 +22,9 @@ export default function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy");
     });
 
-    eleventyConfig.addFilter("shortMonthDay", (dateObj) => {
-        // This creates a date string with a short (3-letter) month and a day.
-        // e.g.: Feb 21
-        return DateTime.fromJSDate(dateObj, {zone: "utc"}).toFormat("LLL dd");
-    });
+    // eleventyConfig.addFilter("shortMonthDay", (dateObj) => {
+    //     // This creates a date string with a short (3-letter) month and a day.
+    //     // e.g.: Feb 21
+    //     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("LLL dd");
+    // });
 };
