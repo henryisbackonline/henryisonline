@@ -9,8 +9,11 @@ I'm Henry, and this is my website. I made this because I wanted a place on the i
 
 If you want to read more about me, you can do so [here](/about/).
 
-If you want to know more about this website and how I made it, check out [the colophon](/colophon/).
+This website was build with [Eleventy](https://11ty.dev). If you want to know more about this website and how I made it, check out [the colophon](/colophon/).
 
+Sometime soon, I'll have my most recent posts listed here. Until that point, enjoy this *very* basic landing page.
+
+{#
 # Recent Posts
 I have some nunjucks here that I need to get working. I haven't yet figured out how I can do that, but when I do, god help you all.
 
@@ -21,5 +24,6 @@ I have some nunjucks here that I need to get working. I haven't yet figured out 
 {% include "postslist.njk" %}
 ```
 {% endraw %}
+#}
 
 More posts can be found in the [blog](/blog/).
