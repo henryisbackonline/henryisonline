@@ -2,7 +2,7 @@ import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 // import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
-import dateFilters from "/_config/date.js";
+import dateFilters from "./_config/date.js";
 
 export default function (eleventyConfig) {
 
