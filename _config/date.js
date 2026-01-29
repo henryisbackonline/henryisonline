@@ -1,17 +1,16 @@
-// Custom date filters based on = eleventy-base-blog
-
+// Custom date filters based on eleventy-base-blog
 import { DateTime } from "luxon";
 
 export default function(eleventyConfig) {
-    eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
-        // Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
-        return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
-    });
+	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
+		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
+		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
+	});
 
-    eleventyConfig.addFilter("htmlDateString", (dateObj) => {
-        // dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-        return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
-    });
+	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat('yyyy-LL-dd');
+	});
 
     eleventyConfig.addFilter("yearString", (dateObj) => {
         // This is identical to the above function
@@ -22,9 +21,9 @@ export default function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy");
     });
 
-    // eleventyConfig.addFilter("shortMonthDay", (dateObj) => {
-    //     // This creates a date string with a short (3-letter) month and a day.
-    //     // e.g.: Feb 21
-    //     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("LLL dd");
-    // });
+    eleventyConfig.addFilter("monthDay", (dateObj) => {
+        // This creates a date string with a short (3-letter) month and a day.
+        // e.g.: Feb 21
+        return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("LLL-dd");
+    });
 };
