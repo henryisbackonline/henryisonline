@@ -50,16 +50,15 @@
 
 /* Root Variables */
 :root {
-    --background-color: #eeeeee;
-    --text-color: #1a1a1a;
-    --codeblock-color: #bebebe;
-
+    --background-color: #f3f3f3;
+    --text-color: #3c3c3c;
+    --codeblock-color: #eaeaea;
 
     --content-width: 40em;
 
     --font-body: "Source Serif 4", Georgia, 'Times New Roman', 'New York', ui-serif, serif;
     --font-heading: "Inter Display", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', Geneva, Tahoma, sans-serif;
-    --font-code: Menlo, Monaco, SF Mono, Consolas, Courier New, Segoe UI Mono, ui-monospace, monospace;
+    --font-code: "JetBrains Mono", Menlo, Monaco, SF Mono, Consolas, Courier New, Segoe UI Mono, ui-monospace, monospace;
 }
 
 html, body {
@@ -92,7 +91,6 @@ pre {
     background-color: var(--codeblock-color);
     padding: 10px;
     border-radius: 5px;
-
 }
 
 hr {
@@ -128,12 +126,9 @@ a:hover {
 }
 */
 
-a:link {
-    color: #0000EE;
-    text-decoration: none;
-}
-a:visited {
-    color: #0000EE;
+a {
+    color: var(--text-color);
+    text-decoration: underline;
 }
 
 /* Styles for the site header */ 
