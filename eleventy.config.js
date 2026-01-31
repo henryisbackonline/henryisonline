@@ -10,8 +10,7 @@ export default function (eleventyConfig) {
     eleventyConfig.addPlugin(dateFilters);
 
     // Copy everything in the assets folder to the root of the output directory
-    eleventyConfig.addPassthroughCopy({ "assets/**" : "./" });
-    eleventyConfig.addPassthroughCopy({ "assets/site-logo-800px.png" : "./"})
+    eleventyConfig.addPassthroughCopy({ "assets/**" : "/" });
 
     // Use the eleventy navigation options
     eleventyConfig.addPlugin(eleventyNavigationPlugin);

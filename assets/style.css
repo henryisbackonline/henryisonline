@@ -158,15 +158,19 @@ a {
     margin: 1em 0;
     width: 100%;
 }
-.nav-list ul a {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-decoration: none;
+.nav-list {
+    ul{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+    }
 }
 
 .post-metadata {
