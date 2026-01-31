@@ -11,6 +11,7 @@ export default function (eleventyConfig) {
 
     // Copy everything in the assets folder to the root of the output directory
     eleventyConfig.addPassthroughCopy({ "assets/**" : "./" });
+    eleventyConfig.addPassthroughCopy({ "assets/site-logo-800px.png" : "./"})
 
     // Use the eleventy navigation options
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -67,7 +68,7 @@ export const config = {
     htmlTemplateEngine: "njk",
 
     dir: {
-        input: "_src",
+        input: "content",
         includes: "../_includes",
         data: "../data",
         output: "_site"
