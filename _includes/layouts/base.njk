@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="/style.css">
 </head>
     <body>
         <header id="top">
             <div class="site-header">
-                <div class="header-text">
-                    <h1>henry is online</h1>
-                </div>
-                {# <img class="logo" src="" alt="site logo"> #}
+                <a style="text-decoration: none" href="/">
+                    <h1 class="header-text">henry is online</h1>
+                </a>
+                <img class="logo" src="/site-logo-800px.png" alt="site logo">
             </div>
             {% include "layouts/site-nav.njk" %}
         </header>
         <main id="main">
             {{ content | safe }}
         </main>
-        <footer>
+        <footer class="site-footer">
             <div class="nav-divider"></div>
-            <h5 style="text-align: center;"><a href="#top">Back to the top &uarr;</a></h5>
+                <h5 style="text-align: center;">
+                    <a style="text-decoration: none" href="#top">Back to the top &uarr;</a>
+                </h5>
         </footer>
     </body>
 </html>
