@@ -24,6 +24,6 @@ export default function(eleventyConfig) {
     eleventyConfig.addFilter("monthDay", (dateObj) => {
         // This creates a date string with a short (3-letter) month and a day.
         // e.g.: Feb 21
-        return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("LLL-dd");
+        return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("LLL dd");
     });
 };
