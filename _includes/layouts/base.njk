@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="/style.css">
 </head>
     <body>
-        <header id="top">
-            <div class="site-header">
-                <a style="text-decoration: none" href="/">
-                    <h1 class="header-text">henry is online</h1>
-                </a>
-                <img class="logo" src="/site-logo-800px.png" alt="site logo">
-            </div>
-            {% include "layouts/site-nav.njk" %}
+        <header id="top" class="site-header">
+            <a href="/" class="header-link">
+                <h1 class="header-text">henry is online</h1>
+                <img class="logo" src="/site-logo-400px.png" alt="site logo">
+            </a>
         </header>
+
+        {% include "layouts/site-nav.njk" %}
+
         <main id="main">
             {{ content | safe }}
         </main>
