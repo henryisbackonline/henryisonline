@@ -120,7 +120,7 @@ On the topic of cables, I have the unfortunate habit of collecting all the cable
 
 ### [Electric candle lighter](https://www.amazon.com/Electric-Lighter%EF%BC%8CUSB-Charge%EF%BC%8CRechargeable%EF%BC%8CArc%EF%BC%8CPlasma-Candles%EF%BC%8CFireworks%EF%BC%8CGrill%EF%BC%8CCook-Obsidian/dp/B08GLRLH25/ref=sr_1_5?crid=2XWA0L0GV03PZ&dib=eyJ2IjoiMSJ9.t-_MoTSHoDMvJHfTVxOy2rM46WfghkoRLLvKto7P0yyT-9nBUjTDU-OAgPus_SFBMntDnW55xqeleZzj8LoKSK6mSuCqFvhVd_945ZPOHj5ppUBzHUqMpdMg9Mwpcvh7MfARKpA-zFw7hsbcKlbuerjtTMErQYLtVIFLCK8MYQWL8bbsgLqCYkjTqx3ql0tlGOfNoOtTxsfjnB7A4Zif2EJ83uER8UZUgJUwsV5nK-EsDqD3Bw7PBG8qtVsbF7jrURVh0Qyv813_qSMMk92pltFjyMD0mmw4pKhnyI8dxZg.QCN0QAyHvlUiC9nfhk8JJdGye0b-2MnLTJm3dOD3gbg&dib_tag=se&keywords=electric%2Barc%2Blighter&qid=1722749159&sprefix=electric%2Barc%2Blight%2Caps%2C356&sr=8-5&th=1) — $11
 
-![https://cdn-images-1.medium.com/max/800/0*xy2zLpA8LtIqM5jC.jpg](https://cdn-images-1.medium.com/max/800/0*xy2zLpA8LtIqM5jC.jpg)
+![0xy2zLpA8LtIqM5jC.jpg](0xy2zLpA8LtIqM5jC.jpg)
 
   
 

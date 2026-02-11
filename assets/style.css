@@ -17,27 +17,6 @@
   font-style: normal;
   font-display: swap;
 }
-/* @font-face {
-  font-family: "Source Serif 4";
-  src: url("../fonts/SourceSerif4-Italic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Source Serif 4";
-  src: url("../fonts/SourceSerif4-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Source Serif 4";
-  src: url("../fonts/SourceSerif4-SemiBoldItalic.woff2") format("woff2");
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-} */
 
 /* JETBRAINS MONO — Code blocks */
 @font-face {
@@ -50,17 +29,27 @@
 
 /* ===== Root Variables ===== */
 :root {
-    --background-color: #f3f3f3;
-    --text-color: #3c3c3c;
-    --codeblock-color: #eaeaea;
+    --color-gray-01: #f3f3f3;
+    --color-gray-02: #eaeaea;
+    --color-gray-03: #cecece;
+    --color-gray-04: #3a3a3a;
+    --color-gray-05: #2a2a2a;
 
-    --content-width: 42em;
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    --background-color: var(--color-gray-01);
+    --text-color: var(--color-gray-05);
+    --codeblock-color: var(--color-gray-02);
+
+    --content-width: 42rem;
 
     --font-body: "Source Serif 4", Georgia, 'Times New Roman', 'New York', ui-serif, serif;
     --font-heading: "Inter Display", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', Geneva, Tahoma, sans-serif;
     --font-code: "JetBrains Mono", Menlo, Monaco, SF Mono, Consolas, Courier New, Segoe UI Mono, ui-monospace, monospace;
 }
 
+/* ===== Base document ===== */
 html, body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -69,20 +58,20 @@ html, body {
     padding: 0 10px;
 }
 
-a {
-    color: var(--text-color);
-    text-decoration: underline;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     line-height: 1.2;
 }
 
-p {
+p, ol, ul, li {
     font-family: var(--font-body);
     line-height: 1.6;
     font-size: 18px;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: underline;
 }
 
 code {
@@ -92,87 +81,114 @@ code {
 
 pre {
     overflow: auto;
-    line-height: 1.4;
     background-color: var(--codeblock-color);
+    line-height: 1.6;
     padding: 10px;
     border-radius: 5px;
 }
 
 hr {
     height: 0;
-    border: 1px solid var(--text-color);
+    border: 0.5px solid var(--text-color);
     width: 100%;
 }
 
 /* ===== Fluid images - from https://www.zachleat.com/web/fluid-images/ ===== */
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
+
 img[width][height] {
-  height: auto; /* Preserve aspect ratio */
+    height: auto; /* Preserve aspect ratio */
 }
+
 img[src$=".svg"] {  /* Let SVG scale without boundaries */
-  width: 100%;
-  height: auto;
-  max-width: none;
-}
-
-/* ===== Styles for the site header ===== */ 
-.site-header{
     width: 100%;
-    
-    /* This caps the width of the container itself */
-    max-width: var(--content-width); 
-    
-    /* This centers the container on the page */
-    margin-inline: auto; 
-    
-    /* CRITICAL: This tells CSS to measure this box for child elements */
-    container-type: inline-size;
-}
-.header-link {
-    text-decoration: none;
+    height: auto;
+    max-width: none;
 }
 
-.header-text {
-    width: 101%;
-    text-align: left; 
-    line-height: 1;   /* Tighten line height for large text */
-    margin: 0;
-    font-size: 15cqw;  /* */
+/* ===== Site header ===== */ 
+.header {
+    display: flex;
+    align-items: flex-start;
 }
-/* 
-.logo {
-    max-height: 12%;
-    height: 1em; 
-    width: auto;
-    display: block;
-} 
-*/
 
-/* ===== Styles for the navigation bar ===== */ 
+.header__logo {
+    margin-right: 20px;
+    max-width: 110px;
+}
+
+.header__text {
+    h1 {
+        font-size: 60px;
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* shrink things down on phone screens */
+@media (max-width: 658px) {
+    .header {
+        align-items: flex-start;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header__text h1 {
+        font-size: 45px; /* smaller title on phones */
+    }
+}
+
+/* ===== Navigation bar ===== */ 
 .nav-divider {
     height: 0;
-    border: 1px solid;
+    border: 0.5px solid;
+    color: var(--color-gray-03);
     margin: 1em 0;
     width: 100%;
 }
 
+/* for simple horizontal list */
 .nav-list {
-    ul{
+    ul {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        margin-right: 15px;
+    }
+}
+
+/* for evenly spaced header list*/
+/* .nav-list {
+    ul {
         display: flex;
         align-items: stretch;
         justify-content: space-between;
+        flex-wrap: wrap;
         width: 100%;
         margin: 0;
         padding: 0;
         list-style-type: none;
     }
-    a {
-        text-decoration: none;
+    li {
+        margin: 5px;
     }
-}
+    a {
+        font-family: var(--font-heading);
+        text-decoration: none;
 
+    }
+} */
+
+/* ===== Post metadata (date, tags, etc.) ===== */
 .post-metadata {
     /* display: flex;
     align-items: stretch;
@@ -183,6 +199,7 @@ img[src$=".svg"] {  /* Let SVG scale without boundaries */
     list-style-type: none;
 }
 
+/* ===== List of posts in blog ===== */
 .postlist {
     list-style-type: none;
     margin: 0;

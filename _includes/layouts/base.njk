@@ -11,23 +11,33 @@
     <link rel="stylesheet" href="/style.css">
 </head>
     <body>
-        <header id="top" class="site-header">
-            <a href="/" class="header-link">
-                <h1 class="header-text">henry is online</h1>
-                {# <img class="logo" src="/site-logo-400px.png" alt="site logo"> #}
-            </a>
+        <header id="top">
+            
+            <div class="header">
+                <div class="header__logo">
+                    <a style="text-decoration: none;" href="/">
+                    <img src="/site-logo-400px.png" alt="site logo">
+                    </a>
+                </div>
+                <div class="header__text">
+                    <a style="text-decoration: none;" href="/">
+                    <h1>henry is online</h1>
+                    </a>
+                    {% include "layouts/site-nav.njk" %}
+                </div>
+            </div>
         </header>
-
-        {% include "layouts/site-nav.njk" %}
-
+        <div class="nav-divider"></div>
+        <br>
         <main id="main">
             {{ content | safe }}
         </main>
+        <br>
         <footer class="site-footer">
             <div class="nav-divider"></div>
-                <h5 style="text-align: center;">
+                <p style="text-align: center;">
                     <a style="text-decoration: none" href="#top">Back to the top &uarr;</a>
-                </h5>
+                </p>
         </footer>
     </body>
 </html>

@@ -9,7 +9,7 @@ eleventyNavigation:
 
 <ul class="postlist">
 {# Display the year in the blog archive #}
-{# from https://chriskirknielsen.com/blog/group-posts-by-year-with-nunjucks-in-eleventy/ #}
+{# modified from https://chriskirknielsen.com/blog/group-posts-by-year-with-nunjucks-in-eleventy/ #}
 {% set currentYear = '' %}
 {% for post in collections.post | reverse %}
 	{% set postYear = post.date | yearString %}
@@ -25,19 +25,3 @@ eleventyNavigation:
 	{% set currentYear = postYear %}
 {% endfor %}
 </ul>
-
-
-{# 
-from https://chriskirknielsen.com/blog/group-posts-by-year-with-nunjucks-in-eleventy/ 
-
-{% set currentYear = '' %}
-{% for post in postslist | reverse %}
-	{% set postYear = post.date | dateFormat({ format: 'year' }) %}
-	{% if currentYear != postYear %}
-	<h2>{{ postYear }}</h2>
-	{% endif %}
-
-	<p><a href="{{ post.url }}">{{ post.data.title }}</a></p>
-	{% set currentYear = postYear %}
-{% endfor %}
-#}

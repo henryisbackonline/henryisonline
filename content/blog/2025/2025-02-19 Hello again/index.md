@@ -39,6 +39,6 @@ The biggest thing that I need is to reduce the friction between myself and writi
 
 Ah well. lots of solutions to problems that I may not even have. For now though, I’m back.
 
-![A photo of the sky I took. Sometimes I forget that I took it because it looks so lovely. There's some magic in photography.](https://pika.page/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NTAxNDgsInB1ciI6ImJsb2JfaWQifX0=--a816cc6797217c56c6eb71453787b6174a0b6aae/IMG_4511_banner.jpeg)
+![A photo of the sky I took. Sometimes I forget that I took it because it looks so lovely. There's some magic in photography.](IMG_4511_banner.jpeg)
 
 .     .     .

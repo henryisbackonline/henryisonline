@@ -1,6 +1,7 @@
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
-// import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import { IdAttributePlugin } from "@11ty/eleventy";
 
 import dateFilters from "./_config/date.js";
 
@@ -14,6 +15,9 @@ export default function (eleventyConfig) {
 
     // Use the eleventy navigation options
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
+    // Add id attributes to all headers for TOC links
+    eleventyConfig.addPlugin(IdAttributePlugin);
 
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 
@@ -33,31 +37,65 @@ export default function (eleventyConfig) {
         }
     });
 
-    // Use eleventy-plugin-rss to generate an rss/atom/json feed for the blog
-	// eleventyConfig.addPlugin(feedPlugin, {
-	// 	type: "atom", // or "rss", "json"
-	// 	outputPath: "feeds/atomfeed.xml",
-	// 	collection: {
-	// 		name: "posts", // iterate over `collections.posts`
-	// 		limit: 0,      // 0 means no limit - I want all my posts available at first
-	// 	},
-	// 	metadata: {
-	// 		language: "en",
-	// 		title: "Henry is Online - Blog",
-	// 		subtitle: "", //I'll get back to this
-	// 		base: "", // my url is not yet chosen 
-	// 		author: {
-	// 			name: "Henry",
-	// 			email: "", // I won't have any email set up just yet
-	// 		}
-	// 	}
-	// });
+    // Generate an ATOM feed for all posts
+    eleventyConfig.addPlugin(feedPlugin, {
+        type: "atom",
+        outputPath: "/feeds/atomfeed.xml",
+        collection: {
+            name: "posts", // iterate over `collections.posts`
+            limit: 0,       // 0 means no limit
+        },
+        metadata: {
+            language: "en",
+            title: "Henry Is Online",
+            subtitle: "",
+            base: "https://henryisonline.com/",
+            author: {
+                name: "Henry",
+                email: "", // Optional
+            }
+        }
+    });
 
-    // eleventyConfig.addBundle("css", {
-    //     toFileDirectory: "_site",
-    //     bundleHtmlContentFromSelector: "style"
-    //     // all of the above is from eleventy-base-blog config file
-    // });
+    // Generate an RSS feed for all posts
+    eleventyConfig.addPlugin(feedPlugin, {
+        type: "rss",
+        outputPath: "/feeds/rssfeed.xml",
+        collection: {
+            name: "posts", // iterate over `collections.posts`
+            limit: 0,       // 0 means no limit
+        },
+        metadata: {
+            language: "en",
+            title: "Henry Is Online",
+            subtitle: "",
+            base: "https://henryisonline.com/",
+            author: {
+                name: "Henry",
+                email: "", // Optional
+            }
+        }
+    });
+
+    // Generate the JSON feed for all posts
+    eleventyConfig.addPlugin(feedPlugin, {
+        type: "json",
+        outputPath: "/feeds/jsonfeed.json",
+        collection: {
+            name: "posts", // iterate over `collections.posts`
+            limit: 0,       // 0 means no limit
+        },
+        metadata: {
+            language: "en",
+            title: "Henry Is Online",
+            subtitle: "",
+            base: "https://henryisonline.com/",
+            author: {
+                name: "Henry",
+                email: "", // Optional
+            }
+        }
+    });
 };
 
 export const config = {
