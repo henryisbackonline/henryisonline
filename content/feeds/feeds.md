@@ -6,9 +6,7 @@ eleventyNavigation:
 ---
 # {{ title }}
 
-All blog posts are available as an ATOM feed, which should work with all modern RSS readers.
-
-You can get the feed from [this link](atomfeed.xml).
+At some point soon, my post library will be available *in its entirery* (for a limited time). I'll provide an ATOM feed at the very least, but I hope to include RSS and JSON as well. I'll link those feeds here when I make them work.
 
 ## Need an RSS reader?
 

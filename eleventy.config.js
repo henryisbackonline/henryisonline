@@ -19,6 +19,7 @@ export default function (eleventyConfig) {
     // Add id attributes to all headers for TOC links
     eleventyConfig.addPlugin(IdAttributePlugin);
 
+    // Transform images for smalle final site size
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 
         // transform all images to png format
@@ -38,67 +39,30 @@ export default function (eleventyConfig) {
     });
 
     // Generate an ATOM feed for all posts
-    eleventyConfig.addPlugin(feedPlugin, {
-        type: "atom",
-        outputPath: "/feeds/atomfeed.xml",
-        collection: {
-            name: "posts", // iterate over `collections.posts`
-            limit: 0,       // 0 means no limit
-        },
-        metadata: {
-            language: "en",
-            title: "Henry Is Online",
-            subtitle: "",
-            base: "https://henryisonline.com/",
-            author: {
-                name: "Henry",
-                email: "", // Optional
-            }
-        }
-    });
-
-    // Generate an RSS feed for all posts
-    eleventyConfig.addPlugin(feedPlugin, {
-        type: "rss",
-        outputPath: "/feeds/rssfeed.xml",
-        collection: {
-            name: "posts", // iterate over `collections.posts`
-            limit: 0,       // 0 means no limit
-        },
-        metadata: {
-            language: "en",
-            title: "Henry Is Online",
-            subtitle: "",
-            base: "https://henryisonline.com/",
-            author: {
-                name: "Henry",
-                email: "", // Optional
-            }
-        }
-    });
-
-    // Generate the JSON feed for all posts
-    eleventyConfig.addPlugin(feedPlugin, {
-        type: "json",
-        outputPath: "/feeds/jsonfeed.json",
-        collection: {
-            name: "posts", // iterate over `collections.posts`
-            limit: 0,       // 0 means no limit
-        },
-        metadata: {
-            language: "en",
-            title: "Henry Is Online",
-            subtitle: "",
-            base: "https://henryisonline.com/",
-            author: {
-                name: "Henry",
-                email: "", // Optional
-            }
-        }
-    });
+    // eleventyConfig.addPlugin(feedPlugin, {
+    //     type: "atom",
+    //     outputPath: "/feeds/atomfeed.xml",
+    //     collection: {
+    //         name: "posts", // iterate over `collections.posts`
+    //         limit: 10,     // 0 means no limit
+    //     },
+    //     metadata: {
+    //         language: "en",
+    //         title: "Henry Is Online",
+    //         subtitle: "",
+    //         base: "https://henryisonline.com/",
+    //         author: {
+    //             name: "Henry",
+    //             email: "", // Optional
+    //         }
+    //     }
+    // });
 };
 
 export const config = {
+
+    // Add template formats
+    templateFormats: ["html", "md", "njk"],
 
     // Process all markdown and html files with nunjucks
     markdownTemplateEngine: "njk",
