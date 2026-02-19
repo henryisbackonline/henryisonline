@@ -43,7 +43,7 @@ But what about gaming? I made this PC to play games with my friends, so it bette
 
 This works for the majority of Steam games which, to be fair, is most of the games. Some of them don't work quite as well, but most work perfectly out of the box. All I had to do to start playing games on linux was to go to the Software Centre, search for Steam, and install it. I did absolutely nothing else.
 
-I launched the Steam app (which takes a few minutes to launch for the first time on Linux as it has a lot to initialise) and downloaded some games. They ran. They just *ran*.[1] I didn't have to do any fiddling or programming or even touch the terminal *once*. Even my Xbox controller just connected automatically and worked flawlessly right away. I was completely blown away. This was all *unbelievably* easy to do.
+I launched the Steam app (which takes a few minutes to launch for the first time on Linux as it has a lot to initialise) and downloaded some games. They ran. They just *ran*. [^1] I didn't have to do any fiddling or programming or even touch the terminal *once*. Even my Xbox controller just connected automatically and worked flawlessly right away. I was completely blown away. This was all *unbelievably* easy to do.
 
 # Conclusion
 I'm simplifying some of the research it took to get to this point, but not by *that* much. Understanding what a linux distribution is and finding the one I wanted was the extent the research I did for this project, and I highly doubt that you want a blow-by-blow of what I typed in to google that led to me choosing [Fedora](https://www.fedoraproject.org/) (which you should choose too, if you've made it this far in). Everything else is *as it happened*, which is beyond amazing. 
@@ -56,4 +56,4 @@ I have fallen in love with computers again, and I have Linux to thank for that.
 
 - - -
 
-[1] Well, aside from Minecraft: Bedrock Edition, but that one's entirely Microsoft's fault. Java Edition (my preferred version to play) runs *beautifully*. And by the looks of things, [Bedrock might be playable on Linux within the next year or two](https://github.com/Weather-OS/WineGDK). I'll be keeping my eye on this, but it's a little too much work for me to set it up in its' current state. And without online play available (which is the only reason I play Bedrock), it's not of much use to me right now. Still, I'm *very* excited to see where this goes.
+[^1]: Well, aside from Minecraft: Bedrock Edition, but that one's entirely Microsoft's fault. Java Edition (my preferred version to play) runs *beautifully*. And by the looks of things, [Bedrock might be playable on Linux within the next year or two](https://github.com/Weather-OS/WineGDK). I'll be keeping my eye on this, but it's a little too much work for me to set it up in its' current state. And without online play available (which is the only reason I play Bedrock), it's not of much use to me right now. Still, I'm *very* excited to see where this goes.

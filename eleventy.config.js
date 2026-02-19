@@ -2,6 +2,7 @@ import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import { IdAttributePlugin } from "@11ty/eleventy";
+import footnote_plugin from 'markdown-it-footnote';
 
 import dateFilters from "./_config/date.js";
 
@@ -18,6 +19,9 @@ export default function (eleventyConfig) {
 
     // Add id attributes to all headers for TOC links
     eleventyConfig.addPlugin(IdAttributePlugin);
+
+    // Add footnote capabilities from markdown-it plugins
+    eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(footnote_plugin));
 
     // Transform images for smalle final site size
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
