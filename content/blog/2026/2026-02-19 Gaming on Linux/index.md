@@ -54,6 +54,4 @@ Oh, I forgot to mention — I have this thing hooked up to my TV. I play games o
 
 I have fallen in love with computers again, and I have Linux to thank for that.
 
-- - -
-
 [^1]: Well, aside from Minecraft: Bedrock Edition, but that one's entirely Microsoft's fault. Java Edition (my preferred version to play) runs *beautifully*. And by the looks of things, [Bedrock might be playable on Linux within the next year or two](https://github.com/Weather-OS/WineGDK). I'll be keeping my eye on this, but it's a little too much work for me to set it up in its' current state. And without online play available (which is the only reason I play Bedrock), it's not of much use to me right now. Still, I'm *very* excited to see where this goes.

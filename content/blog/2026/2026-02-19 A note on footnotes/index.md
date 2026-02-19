@@ -25,8 +25,6 @@ eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(footnote_plugin));
 
 That's it! Super simple. Now you can have all the footnotes you want [^2].
 
-- - -
-
 [^1]: Like this one here. They're very useful.
 
 [^2]: Massive thanks to [Martin Hähnel](https://blog.martin-haehnel.de/) for this.
