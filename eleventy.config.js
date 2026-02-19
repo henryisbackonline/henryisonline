@@ -20,7 +20,7 @@ export default function (eleventyConfig) {
     // Add id attributes to all headers for TOC links
     eleventyConfig.addPlugin(IdAttributePlugin);
 
-    // Add footnote capabilities from markdown-it plugins
+    // Add footnote capabilities from markdown-it plugins - thank you Martin Hähnel
     eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(footnote_plugin));
 
     // Transform images for smalle final site size
