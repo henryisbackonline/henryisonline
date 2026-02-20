@@ -11,7 +11,7 @@ If you want to read more about me, you can do so [here](/about/).
 
 This website was build with [Eleventy](https://11ty.dev). If you want to know more about this website and how I made it, check out [the colophon](/colophon/).
 
-Sometime soon, I'll have my most recent posts listed here. Until that point, enjoy this *very* basic landing page.
+Sometime soon, I'll have my most recent posts listed here. Until that point, enjoy this *very* basic landing page. The whole website is still under construction, so layouts and other things are subject to change. I'll try my best not to break too many links, though.
 
 {#
 # Recent Posts

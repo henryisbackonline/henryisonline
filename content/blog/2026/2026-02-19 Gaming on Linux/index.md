@@ -22,7 +22,7 @@ So I left Windows (and the custom PC world) behind. I did two things after that:
 1. Bought a Macbook, which I *adore* and will probably write about in the future, and
 2. Started looking into Linux.
 
-## Linux? 
+# Linux? 
 **Why Linux? Isn't that more fiddly?**
 
 That's what I thought too. But I heard that Linux had become much more useable in 2025, and that you didn't need to do nearly as much fiddling with it — or often, no fiddling at all. I decided to give it a try. After all, by this point I had been using my Mac for months, and had saved so much time that I had could afford to spend some of it fiddling with a new operating system for fun.

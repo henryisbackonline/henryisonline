@@ -19,7 +19,7 @@ This means that by simply knowing some simple key combinations, you can bypass *
 4. `TAB` to the email field and begin writing the email
 	- `CTRL + B/I/U` for bold/italics/underline
 	- `CTRL + K` for hyperlinks
-5.  Once the email was drafted,`CTRL + ENTER` to send
+5.  Once the email was drafted, `CTRL + ENTER` to send
 
 This, for me, was much faster than reaching for the mouse, clicking on icons, and highlighting and applying formatting by hand. Granted, it takes practice to memorise these things, but it’s worth it for me. It makes the whole process of interacting with any computer feel more universal and more simple. I don’t feel bogged down by strange or unfamiliar UI or get stuck interpreting minimalist icons — I simply press the keys that I need, and get the job done twice as fast.
 
