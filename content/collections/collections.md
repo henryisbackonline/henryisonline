@@ -1,10 +1,10 @@
 ---
-title: Collections
+title: Collections | henry is online
 eleventyNavigation:
   key: Collections
   order: 6
 ---
-# {{ title }}
+# Collections
 
 I store small collections of things here that I'm happy to store publically. Mainly snippets of code, notes, or links (though I might deal with links like [Robb Knight](https://rknight.me/links) in the future). You can find the blogs I follow below, and links to everything else as well.
 
