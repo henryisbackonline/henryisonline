@@ -5,8 +5,6 @@ tags:
 - apple
 date: 2025-10-19
 ---
-p
-
 I have seen a lot of hate towards macOS 26 Tahoe.
 
 Some of is is genuinely warranted. I've seen truly abhorrent memory leaks in both Calculator and Messages, and some very strange behaviour in Safari. I've seen weird UI bugs, issues with window rendering, and a lot of odd behaviour in the some of Apple's own apps. But that's not what the vast majority of the complaints are about — god forbid we bring attention to misbehaving software. No, instead, most of the complaints are levelled at the *appearance* of the Liquid Glass redesign, and frankly, it's *driving me up the fucking wall.*
