@@ -22,15 +22,15 @@ To maintain the original aspect ratio of the video, use this:
 ```
 ffmpeg -i input.mov -vf scale=[width]:-1 output.mp4
 ```
-where `[width]` is the width of the output video. ffmpeg will calculate the height of the video needed to maintain the original aspect ratio.
+where `[width]` is the width of the output video — say `1920` or `1200`. ffmpeg will calculate the height of the video needed to maintain the original aspect ratio.
 
 If you know the input and output aspect ratios and the desired resolution of the output, use this:
 ```
 ffmpeg -i input.mov -vf "scale=[scale]" output.mp4
 ```
-where `[scale]` is replaced by the video resolution — say 1920:1080, or 1280:720 (both of these assume a 16:9 video).
+where `[scale]` is replaced by the video resolution — say `1920:1080`, or `1280:720` (both of these assume a 16:9 video).
 **If you do this on a video where the input and output ratios are different, the video will be distorted.** It's often *much* better to use the first command.
 
 **Note:** the ffmpgeg commands above use `.mov` as the input and `.mp4` as the output. This is because ffmpeg will transcode the video for you in the same step as resizing it.
 
-For more ono scaling, read the [documentation0](https://ffmpeg.org/ffmpeg-filters.html#scale-1) and look at some [examples](https://ffmpeg.org/ffmpeg-filters.html#Examples-117).
+For more on scaling, read the [documentation0](https://ffmpeg.org/ffmpeg-filters.html#scale-1) and look at some [examples](https://ffmpeg.org/ffmpeg-filters.html#Examples-117).

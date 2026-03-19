@@ -14,7 +14,7 @@ I enjoy a lot of blogs. If you like mine, I’m sure you’ll like these ones.
 *Whoop's, theres nothing here right now! Turns out, the list I has wasn't up-to-date and had a bunch of broken links. I'll update this when I get to it, and post about it when I do it.*
 
 
-## Code snippets
+## Other bits
 - [VSCodium snippets](vscode-snippets)
-- [Exiftool scripts](exiftool)
+- [Exiftool scripts and incantations](exiftool)
 - [ffmpeg incantations](ffmpeg)
