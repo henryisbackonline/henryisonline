@@ -17,3 +17,4 @@ I enjoy a lot of blogs. If you like mine, I’m sure you’ll like these ones.
 ## Code snippets
 - [VSCodium snippets](vscode-snippets)
 - [Exiftool scripts](exiftool)
+- [ffmpeg incantations](ffmpeg)
