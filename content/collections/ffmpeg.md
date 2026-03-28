@@ -34,3 +34,10 @@ where `[scale]` is replaced by the video resolution — say `1920:1080`, or `128
 **Note:** the ffmpgeg commands above use `.mov` as the input and `.mp4` as the output. This is because ffmpeg will transcode the video for you in the same step as resizing it.
 
 For more on scaling, read the [documentation](https://ffmpeg.org/ffmpeg-filters.html#scale-1) and look at some [examples](https://ffmpeg.org/ffmpeg-filters.html#Examples-117).
+
+## Spliting videos into franes
+```
+ffmpeg -i in.mp4 img%04d.jpg
+```
+
+This will split a video into images for every frame. I usually prefer `.jpg` outputs. `in.mp4` is the input video and can be any format with any name. However, for complex titles (i.e.: with spaces), wrap it in quotaion marks.
