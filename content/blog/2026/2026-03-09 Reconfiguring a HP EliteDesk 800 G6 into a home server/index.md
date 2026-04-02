@@ -6,7 +6,7 @@ tags:
   - computers
   - homelab
 ---
-I bought a mini pc on eBay recently with the goal of turning it into a home server (or specifically, a Minecraft server. However, my efforts were cut short when I discovered that the PC was BIOS locked.
+I bought a mini pc on eBay recently with the goal of turning it into a home server — specifically, a Minecraft server. However, my efforts were cut short when I discovered that the PC was BIOS locked.
 
 This means that the system that boots the operating system was locked behind a password field, and I didn't have the password at all. The seller must have forgotten to enter it and subsequently disable the BIOS lock, or simple received this computer as-is, cleaned and refurbished it, and then sold it in eBay without look at it's software situation. Given who the seller was and the other devices they were selling, I assumed the latter was true, meaning that they would not be able to supply me with the password.
 
