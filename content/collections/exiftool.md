@@ -6,6 +6,7 @@ I hope these commands can help you as much as they have helped me.
 
 - [Useful Exiftool commands](#useful-exiftool-commands)
   - [Modifying GPS metadata](#modifying-gps-metadata)
+  - [Geotaging a whole folder of photos](#geotaging-a-whole-folder-of-photos)
   - [Change dates with a script](#change-dates-with-a-script)
 
 - - -
@@ -23,6 +24,17 @@ You need the following in this command:
 4. the reference frame for the latitude (East (E) or West (W))
 
 For example, `exiftool -GPSLatitude=48.85787 -GPSLatitudeRef=N -GPSLongitude=2.29512 -GPSLongitudeRef=E "-FileCreateDate<DateTimeOriginal" "-FileModifyDate<DateTimeOriginal" -overwrite_original -P .` Will change the location of all the photos in the directory (without modifying any of their dates) such that all the photos appear to be taken in front of the Eiffel Tower.
+
+- - -
+
+## Geotaging a whole folder of photos
+This really is one of my favorre things to do with exiftool. It's dead simple, especially if you have a GPX trail. I usually create a GPX trail on my phone and transfer it to my Mac, along with my photos (RAW and JPEG) into a folder on my desktop. I then run this command:
+```
+exiftool -geotag track.gpx . -P 
+```
+which add GPS data to all the images in the folder from the track, and like above, doesn't modify any date data (`-P`). 
+
+If you want to read more about that option specifically, [the documentation](https://exiftool.org/geotag.html) is super clear and very helpful.
 
 - - -
 
