@@ -4,7 +4,7 @@ eleventyNavigation:
   key: Home
   order: 1
 ---
-# This is my website.
+# Hello!
 I'm Henry, and this is my website. I made this because I wanted a place on the internet that wasn't attached to any kind of social media service. 
 
 If you want to read more about me, or about this website, you can do so [here](/about/).
