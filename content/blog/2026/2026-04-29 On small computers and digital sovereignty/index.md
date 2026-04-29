@@ -1,0 +1,26 @@
+---
+title: On small computers and digital sovereignty
+date: 2026-04-29
+tags:
+  - technology
+  - philosophy
+---
+I was handed an old iPad by a family member recently. There was no real reason for me to have it, other than they didn't need it and they knew that I might like to disassemble it for fun. Out of curiosity, I plugged it in to a charger and tried to see if it would boot up, which it did. With their permission, I started diving through the photo album to see if there were any photos that I might be able to salvage for archival before I started pulling component out of this old tablet.
+
+There were lots of photos. *Old* photos. Photos of me as a child, photos of my family from many years ago, and photos of my old house. This wasn't the first time I've come across old digital photos like this, and certainly not the first time that I've tried to recover them. However, this was the first time that I wasn't able to.
+
+You see, this old iPad was an iPad Mini 2 with 16gb of storage - a frankly *minuscule* amount, even for 2013. As a result, most of these photos were backed up and stored to iCloud under a family account. While this iPad was still in use (and even while its was sitting idle in a cupboard) this worked perfectly, and saved a lot of room on the device. The problems came not from iCloud, but form the email account tied to it.
+
+That email address was compromised in a data breach, and almost immediately it was being targeted by scammers and fraudsters. Justifiably, all ties to that address were removed, and the address and accounts associated with it were deleted — including the old Apple account that it was tied to. Now this was a minor hassle as lots of account stuff had to be set up from scratch, but we all were able to remove all out photos and data from iCloud before that account was deleted — with the exception of this iPad Mini 2. It had long since drained completely, and was completely oblivious to all of these account changes and removals.
+
+All the photos on this iPad were backed up to iCloud, owned by an account that didn't exist, administered by an email that was deleted. The thumbnails exist on the device still, but the photos they reference in the cloud servers have long since been deleted. Every single photo has the little "Download error" exclamation mark on the bottom right. They are completely unrecoverable, maybe save for the low-resolution thumbnails.
+
+As far as I can tell, these photos didn't exist anywhere else. They were never backed up or downloaded, they were never emailed or stored in Files. They're just *gone*. For me, as someone who likes to digitally hoard all the photos I possibly can, this was hard to see. I like to use photos as an outboard memory, especially since mine isn't the best to begin with. To see all these memories be rendered completely inaccessible was truly saddening, and it strengthened by resolve to start backing up and storing locally as much information as I possibly could.
+
+Data breaches won't stop. Email addresses can be so easily compromised, and they serve as the digital keys to the kingdom in so many places. I want to be clear: this isn't a ding against Apple or Google or whoever stores your photo library in a cloud service somewhere. It's my personal gripe that this kind of offloading of personal data has become so commonplace, and as a result, we have *very little control* over how any of that data is cared for. 
+
+Precious things like photos can be so easily removed and deleted if they leave your hands. Keeping them and archiving them yourself shifts the burden of care back onto you, sure, but it means that *you* own them. *You alone* know where they're stored and how they're stored. *You alone* care for them and keep them safe. There's no outsourcing to a cloud service that could shut off at any minute, or any risk that a compromised account leads to the deletion of every photo you've every taken. They are in your hands. That's where they should stay.
+
+I'm making a promise to myself. In a year's time, I want to be much less reliant on cloud storage services like this — and more broadly speaking, much less reliant on any cloud service in general. I want to own all the media I like, whether it's a song or a movie or a TV show, or the photos and videos I take to remember things. I want to find things I like and care about, and know that I can keep them somewhere safe for as along as I live. I don't want to have to have to cede my photos and movies and memories to a data centre somewhere halfway across the world — I want to know that everything I hold dear is safe under my roof. 
+
+In some ways, I've already started. I built a small game server in my house for me and my friends so we aren't burdened by endless live service subscription fees. But it has more to do with the stability. I know that I own the whole server: the hardware, the software, and the game files are mine alone, and there isn't any risk of any server host suddenly shutting down and my friends and I losing all our progress and effort. It's a small start, but I hope to grow it. I want to own my stuff again.
