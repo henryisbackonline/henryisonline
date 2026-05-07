@@ -96,16 +96,19 @@ hr {
 /* ===== Fluid images - from https://www.zachleat.com/web/fluid-images/ ===== */
 img {
     max-width: 100%;
+    border-radius: 5px;
 }
 
 img[width][height] {
     height: auto; /* Preserve aspect ratio */
+    border-radius: 5px;
 }
 
 img[src$=".svg"] {  /* Let SVG scale without boundaries */
     width: 100%;
     height: auto;
     max-width: none;
+    border-radius: 5px;
 }
 
 /* ===== Site header ===== */ 
