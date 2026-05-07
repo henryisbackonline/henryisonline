@@ -97,11 +97,13 @@ hr {
 img {
     max-width: 100%;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 img[width][height] {
     height: auto; /* Preserve aspect ratio */
     border-radius: 5px;
+    object-fit: cover;
 }
 
 img[src$=".svg"] {  /* Let SVG scale without boundaries */
@@ -109,6 +111,7 @@ img[src$=".svg"] {  /* Let SVG scale without boundaries */
     height: auto;
     max-width: none;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 /* ===== Site header ===== */ 
