@@ -24,4 +24,4 @@ I highly recommend [NetNewsWire](https://netnewswire.com) for iOS, iPadOS, and m
 
 Another great iOS option is [feeeed](https://feeeed.nateparrott.com). I've used it a few times and it seems to work very well as an *everything* reader. Seriously, the amount of stuff you can do with this app is wild.
 
-I'm not very up to date with the world of Android apps, but it looks like a good option is [Feeder](https://play.google.com/store/apps/details?id=com.nononsenseapps.feeder.play). It's [open source](https://github.com/spacecowboy/Feeder), available on F-Droid, and has an `apk` for side-loading—if you're into that.
+I'm not very up to date with the world of Android apps, but it looks like a good option is [Feeder](https://play.google.com/store/apps/details?id=com.nononsenseapps.feeder.play). It's [open source](https://github.com/spacecowboy/Feeder), available on F-Droid, and has an `apk` for side-loading — if you're into that.
