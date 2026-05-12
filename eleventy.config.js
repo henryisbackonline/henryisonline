@@ -43,24 +43,64 @@ export default function (eleventyConfig) {
     });
 
     // Generate an ATOM feed for all posts
-    // eleventyConfig.addPlugin(feedPlugin, {
-    //     type: "atom",
-    //     outputPath: "/feeds/atomfeed.xml",
-    //     collection: {
-    //         name: "posts", // iterate over `collections.posts`
-    //         limit: 10,     // 0 means no limit
-    //     },
-    //     metadata: {
-    //         language: "en",
-    //         title: "Henry Is Online",
-    //         subtitle: "",
-    //         base: "https://henryisonline.com/",
-    //         author: {
-    //             name: "Henry",
-    //             email: "", // Optional
-    //         }
-    //     }
-    // });
+    eleventyConfig.addPlugin(feedPlugin, {
+        type: "atom",
+        outputPath: "/feeds/atomfeed.xml",
+        collection: {
+            name: "post", // iterate over `collections.post`
+            limit: 0,     // 0 means no limit
+        },
+        metadata: {
+            language: "en",
+            title: "Henry Is Online",
+            subtitle: "",
+            base: "https://henryisonline.com/",
+            author: {
+                name: "Henry",
+                email: "", // Optional
+            }
+        }
+    });
+
+    // Generate an RSS feed for all posts
+    eleventyConfig.addPlugin(feedPlugin, {
+        type: "rss",
+        outputPath: "/feeds/rssfeed.xml",
+        collection: {
+            name: "post", // iterate over `collections.post`
+            limit: 0,     // 0 means no limit
+        },
+        metadata: {
+            language: "en",
+            title: "Henry Is Online",
+            subtitle: "",
+            base: "https://henryisonline.com/",
+            author: {
+                name: "Henry",
+                email: "", // Optional
+            }
+        }
+    });
+
+    // Generate a JSON feed for all posts
+    eleventyConfig.addPlugin(feedPlugin, {
+        type: "json",
+        outputPath: "/feeds/feed.json",
+        collection: {
+            name: "post", // iterate over `collections.post`
+            limit: 0,     // 0 means no limit
+        },
+        metadata: {
+            language: "en",
+            title: "Henry Is Online",
+            subtitle: "",
+            base: "https://henryisonline.com/",
+            author: {
+                name: "Henry",
+                email: "", // Optional
+            }
+        }
+    });
 };
 
 export const config = {
