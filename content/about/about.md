@@ -5,8 +5,7 @@ eleventyNavigation:
   order: 4
 ---
 # About me
-
-This is everything about me.
+My name is Henry, and I'm a land surveyor from Australia. I love music, movies, birds, photography, computers, and the internet. 
 
 # About this site
 
