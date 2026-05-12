@@ -1,2 +1,5 @@
 README.md
 .vscode
+.gitignore
+.package.json
+.pnpm-lock.yaml
