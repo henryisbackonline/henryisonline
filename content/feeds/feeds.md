@@ -15,7 +15,6 @@ My entire post backlog is available as an ATOM, RSS, and JSON feed. It will not 
 If you're not sure which one to use, choose the RSS feed. It'll work with practically every RSS reader out there. Speaking of which...
 
 ## Need an RSS reader?
-
 *TL;DR:* 
 - iOS/Apple: [NetNewsWire](https://netnewswire.com)
 - Android: [Feeder](https://play.google.com/store/apps/details?id=com.nononsenseapps.feeder.play)
