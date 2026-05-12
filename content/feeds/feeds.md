@@ -6,7 +6,13 @@ eleventyNavigation:
 ---
 
 # Feeds
-At some point soon, my post library will be available *in its entirery* (for a limited time). I'll provide an ATOM feed at the very least, but I hope to include RSS and JSON as well. I'll link those feeds here when I make them work.
+My entire post backlog is available as an ATOM, RSS, and JSON feed. It will not be that way forver though, so if you want to see everything I've every made, now is the time. 
+
+**RSS feed:** [click here](rssfeed.xml)
+**ATOM feed:** [click here](atomfeed.xml)
+**JSON feeed:** [click here](feed.json)
+
+If you're not sure which one to use, choose the RSS feed. It'll work with practically every RSS reader out there. Speaking of which...
 
 ## Need an RSS reader?
 I highly recommend [NetNewsWire](https://netnewswire.com) for iOS, iPadOS, and macOS. It's free, open source, and super easy to use. I use it personally and love every minute I spend using it.
