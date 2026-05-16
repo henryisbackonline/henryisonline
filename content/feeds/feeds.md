@@ -14,7 +14,9 @@ My entire post backlog is available as an ATOM, RSS, and JSON feed. It will not 
     <li><strong>JSON feed: </strong><a href="feed.json">click here</a></li>
 </ul>
 
-If you're not sure which one to use, choose the **Atom feed**. It'll work with practically every RSS reader out there. Speaking of which...
+If you're not sure which one to use, choose the **Atom feed**. It'll work with practically every RSS reader out there. 
+
+Speaking of which...
 
 ## Need an RSS reader?
 *TL;DR:* 
