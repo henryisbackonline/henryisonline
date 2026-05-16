@@ -6,13 +6,15 @@ eleventyNavigation:
 ---
 
 # Feeds
-My entire post backlog is available as an ATOM, RSS, and JSON feed. It will not be that way forver though, so if you want to see everything I've every made, now is the time. 
+My entire post backlog is available as an ATOM, RSS, and JSON feed. It will not be that way forver though, so if you want to see everything I've every made, now is the time.
 
-**RSS feed:** [click here](rssfeed.xml)
-**ATOM feed:** [click here](atomfeed.xml)
-**JSON feeed:** [click here](feed.json)
+<ul style="list-style-type: none; padding: 0;">
+    <li><strong>Atom feed: </strong><a href="atomfeed.xml">click here</a></li>
+    <li><strong>RSS feed: </strong><a href="rssfeed.xml">click here</a></li>
+    <li><strong>JSON feed: </strong><a href="feed.json">click here</a></li>
+</ul>
 
-If you're not sure which one to use, choose the RSS feed. It'll work with practically every RSS reader out there. Speaking of which...
+If you're not sure which one to use, choose the **Atom feed**. It'll work with practically every RSS reader out there. Speaking of which...
 
 ## Need an RSS reader?
 *TL;DR:* 
