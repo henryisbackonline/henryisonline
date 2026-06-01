@@ -10,4 +10,4 @@ My name is Henry, and I'm a land surveyor from Australia. I love music, movies, 
 # About this site
 I built this website with the goal of moving away from social media to make this the place whre I post and publish things.
  
-This site was built with [Eleventy](https://11ty.dev)
+This site is built with [Eleventy](https://11ty.dev). It used to live on GitHub, but due to ~~indifference~~ ~~incompetence~~ issues on their end, it now lives on [GitLab](https://gitlab.com/henryisonline/henryisonline).
