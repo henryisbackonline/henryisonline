@@ -10,7 +10,6 @@ The chairs that go with the dining table at my house are old. We’ve had them f
 # Measuring the cushions
 
 To replace the cushions, the first step was to remove them from the chairs. This was quite easy - they were attached with a screw in each corner. 
-
 ![316aa9883a137ac938f4e5a803867d3c.jpg](316aa9883a137ac938f4e5a803867d3c.jpg)
 The old fully assembled chair compared to the same chair with the cushion removed
 
