@@ -64,7 +64,7 @@ export default function (eleventyConfig) {
         },
         metadata: {
             language: "en",
-            title: "Henry Is Online",
+            title: "henry is online",
             subtitle: "",
             base: "https://henryisonline.com/",
             author: {
@@ -84,7 +84,7 @@ export default function (eleventyConfig) {
         },
         metadata: {
             language: "en",
-            title: "Henry Is Online",
+            title: "henry is online",
             subtitle: "",
             base: "https://henryisonline.com/",
             author: {
@@ -104,7 +104,7 @@ export default function (eleventyConfig) {
         },
         metadata: {
             language: "en",
-            title: "Henry Is Online",
+            title: "henry is online",
             subtitle: "",
             base: "https://henryisonline.com/",
             author: {
