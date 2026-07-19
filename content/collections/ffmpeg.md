@@ -1,3 +1,7 @@
+---
+title: ffmpeg incantations
+---
+
 # ffmpeg incantations
 I don't use [ffmpeg](https://ffmpeg.org/) all that often, but when I do, I usually need to do something that I've done before and have since forgotten how. This page is my ffmpeg spellbook — the place I write down all these incantations so I can always have them on hand.
 

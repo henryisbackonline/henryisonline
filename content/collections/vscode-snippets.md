@@ -1,3 +1,7 @@
+---
+title: VSCodium snippets I use
+---
+
 # VSCodium snippets I use
 
 I use [VSCodium](https://vscodium.com) to build this website. These are the snippets I include in the `.vscode` folder in the project root that make my life a little easier.

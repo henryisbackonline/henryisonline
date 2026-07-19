@@ -1,3 +1,7 @@
+---
+title: Useful Exiftool commands
+---
+
 # Useful Exiftool commands
 
 This is a small collection of useful [Exiftool](https://exiftool.org) commands that I have found useful over the years. Exiftool is an incredible resource, and if you do *anything* with photos, it's worth using (at at least knowing) about this wonderful software and what it can do.
